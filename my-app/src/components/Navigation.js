@@ -2,11 +2,11 @@ import {Footer} from './Footer';
 import {Header} from './Header';
 
 export default function Navigation() {
-    return {
+    return ( 
         <div>
             <Header />
             <section>current page</section>
             <Footer />
         </div>
-    };
+    );
 }

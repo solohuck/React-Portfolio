@@ -1,5 +1,5 @@
 export function Header() {
-    return {
+    return ( 
         <div>
             <h1>Solo</h1>
             <nav>
@@ -10,5 +10,5 @@ export function Header() {
                 </ul>
             </nav>
         </div>
-    }
+    );
 }

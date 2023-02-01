@@ -1,6 +1,6 @@
 export default function AboutMe(){
-    return {
+    return (
         <div>AboutMe component</div>
-    }
+    );
 }
 
