@@ -1,0 +1,59 @@
+.home-hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.home-hero__content {
+    text-align: center;
+}
+  
+.home-hero__info {
+    margin: 3rem auto 0 auto;
+    max-width: 80rem
+}
+  
+.home-hero__cta {
+    margin-top: 5rem;
+    text-align: center
+}
+
+.btn:hover {
+    transform: translateY(-3px)
+}
+  
+.btn--bg {
+    padding: 1.5rem 8rem;
+    font-size: 2rem
+}
+
+.btn {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+    transition: transform .3s
+}
+
+.text-primary {
+    color: black;
+    font-size: 2.2rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.6
+}
+
+.heading-primary {
+    font-size: 6rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: black;
+    font-weight: 800
+}
+  
