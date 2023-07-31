@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Home.css';
 
 const Home = () => {
+    useEffect(() => {
+        const hiddenElement = document.querySelectorAll('.hide-it');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('show-it');
+            } 
+          });
+        });
+        hiddenElement.forEach((element) => {
+          observer.observe(element);
+        });
+      }, []);
     return (
-        <section class="home-hero">
-            <div class="home-hero__content">
-                <h1 class="heading-primary">Welcome.</h1>
-                <div class="home-hero__info">
-                    <p class="text-primary">
-                        Hello, my name is Solomon Huckstep and I am an entry level full stack Web Developer 
-                        looking to start my career in web development. 
-                    </p>
-                </div>
-                <div class="home-hero__cta">
-                    <a href="./#projects" class="btn btn--bg">projects</a>
-                </div>
+        <section className="home__container">
+            <div>
+                <h1 className="home__title">Solomon Huckstep,</h1>
+                <h2 className='home__subtitle hide-it'>An aspiring full-stack web developer.</h2>
             </div>
         </section>
     );
