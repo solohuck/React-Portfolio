@@ -17,12 +17,17 @@ const Project = () => {
   }, []);
 
   return (
-    <section id="projects" className="project-hero">
-      <div className="main-container">
-        <div className="project-container">
-          <div className="project-single hidden">1</div>
-          <div className="project-single hidden">2</div>
-          <div className="project-single hidden">3</div>
+    <section id="projects" className="projects">
+      <div className="projects__container">
+        <div className="projects__box-container">
+          <div className="project__mini-container">
+            <div className="project__box project__1 hidden">1</div>
+            <div className="project__box project__2 hidden">2</div>
+          </div>
+          <div className="project__mini-container">
+            <div className="project__box project__3 hidden">3</div>
+            <div className="project__box project__4 hidden">4</div>
+          </div>
         </div>
       </div>
     </section>

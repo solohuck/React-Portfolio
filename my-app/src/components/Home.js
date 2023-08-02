@@ -16,7 +16,7 @@ const Home = () => {
         });
       }, []);
     return (
-        <section className="home__container">
+        <section className="home">
             <div>
                 <h1 className="home__title">Solomon Huckstep,</h1>
                 <h2 className='home__subtitle hide-it'>An aspiring full-stack web developer.</h2>
