@@ -2,8 +2,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100vh;
     background-color: #324F44;
+    position: relative;
+}
+
+.home__title-container{
+    border: 1px solid black;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .home__title{
@@ -29,3 +40,4 @@
     opacity: 0.5;
     filter: blur(0);
 }
+
