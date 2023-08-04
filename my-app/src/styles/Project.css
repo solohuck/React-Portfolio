@@ -79,6 +79,7 @@ li, a, button{
 .item_container{
     grid-area: 4 / 1 / 4 / 4;
     padding-left: 30px;
+    transition: all .35s ease-in-out;
 }
 
 .item_name{
@@ -88,7 +89,6 @@ li, a, button{
     display: flex;
     justify-content: left;
     width: 15em;
-    transition: all .35s ease-in-out;
 }
 
 .item_description{
@@ -96,20 +96,19 @@ li, a, button{
     font-size: 1.5rem;
     font-weight: 500;
     padding-top: 10px;
-    transition: all .35s ease-in-out;
     font-family: 'Montserrat';
     font: italic;
 }
 
-/*on hover have a film slide from the left to the right */
-.project__list-item:hover .item_name{
-    transform: scale(1.05);
-    transition: all .35s ease-in-out;
+.item_button{
+    margin-top: 25px;
 }
 
-.project__list-item:hover .item_description{
-    transform: scale(1.05);
+/*on hover have a film slide from the left to the right */
+.project__list-item:hover .item_container{
+    transform: scale(1.03);
     transition: all .35s ease-in-out;
+    transition-delay: .4s;
 }
 
 
