@@ -4,23 +4,31 @@ import '../styles/Header.css';
 const Header = ({ onContactClick }) => { // Add the onContactClick prop here
   return (
     <header className="header">
-      <div className="header__logo-container">
-        <span className="header__logo">SolomonHuckstep
-          <span className='header__logo-dot'>.</span>
-          <span className='header__logo-dash'> _</span>
-        </span>
-      </div>
-      <div>
-        <ul className="header__items-container">
-          <li className='header__item'><a href="./">Home</a></li>
-          <li className='header__item'><a href="#projects">Projects</a></li>
-          <li className='header__item'><a href="#about">About</a></li>
-          <li className='header__item'><a onClick={onContactClick}>Contact</a></li>
-        </ul>
+      <div className='navbar'>
+        <div className="logo_container">
+          <h1>SolomonHuckstep<span>.</span><span> _</span></h1>
+        </div>
+          <ul className="navbar_links">
+            <li className='navbar_link'><a href="./">Home</a></li>
+            <li className='navbar_link'><a href="#projects">Projects</a></li>
+            <li className='navbar_link'><a href="#about">About</a></li>
+            <button onClick={onContactClick}>Contact</button>
+          </ul>
+        </div>
+      <div className="header_hero">
+        <div className='hero_container'>
+          <h1 className="hero_title">Solomon Huckstep,</h1>
+          <h2 className='hero_subtitle'>An aspiring full-stack web developer.</h2>
+          <button onClick={onContactClick} className='hero_button'>About Me</button>
+        </div>
       </div>
     </header>
+
   );
 };
 
+
 export default Header;
+
+
 
