@@ -75,7 +75,17 @@ button:hover{
   grid-template-rows: repeat(4, 100px);
   background-color: #223732;
   border-radius: 20px;
-  width: 130em;
+  max-width: 130em;
+  max-height: 1000px;
+}
+
+/*if the screeen height is small than 800px then the styles need to change */
+@media screen and (max-height: 650px){
+  .header_hero{
+    grid-template-rows: repeat(4, 60px);
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+  }
 }
 
 .hero_container{
