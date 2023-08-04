@@ -12,6 +12,7 @@ const Project = () => {
               <div className="item_description">
                 A portfolio website built with React.js, HTML, CSS, and JavaScript.
               </div>
+              <button className="item_button">REPO</button>
             </div>
           </li>
           <li className="project__list-item">
@@ -20,6 +21,7 @@ const Project = () => {
               <div className="item_description">
                 A mental math game built with React.js, HTML, CSS, and JavaScript.
               </div>
+              <button className="item_button">REPO</button>
             </div>
           </li>
           <li className="project__list-item">
