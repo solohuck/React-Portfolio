@@ -1,0 +1,229 @@
+/* Contact.css */
+.contact__about-section {
+  position: fixed;
+  top: 30px;
+  left: 100px;
+  right: 100px;
+  bottom: 30px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  background: transparent;
+}
+
+
+.close-btn:hover {
+  color: black;
+}
+
+.contact-about-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  height: 100%;
+  width: 100%;
+  background: transparent
+}
+
+.about__me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 1 / 3 / 6/ 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 50px);
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  color: black;
+}
+
+/*create animation so about_me comes in from the left smootly*/
+.about__me{
+  animation: slideIn-left 1s ease-in-out;
+}
+
+@keyframes slideIn-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.contact__form{
+  animation: slideIn-right 1s ease-in-out;
+}
+
+@keyframes slideIn-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.close-btn{
+  animation: close-btn 3s ease-in-out;
+}
+
+@keyframes close-btn {
+  0% {
+    
+    opacity: 0;
+  }
+  100% {
+    
+    opacity: 1;
+  }
+}
+
+.about__me-title{
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.about__me-title h3{
+  font-size: 1.3rem;
+  font-weight: lighter;
+  margin: 5px 0px;
+}
+
+.contact__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 1 / 3 / 6/ 5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 50px);
+  background-color: #223732;
+}
+
+.contact__form-form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  grid-area: 6/4/1/2;
+}
+
+.about__me-container{
+  display: flex;
+  padding: 50px 0px;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  grid-area: 6/4/1/2;
+}
+
+.about__me-text{
+  margin-top: 20px;
+  font-size: 1.4rem;
+  text-align: justify;
+  max-width: 50ch;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 150px;
+  color: black;
+  margin-top: 20px;
+}
+
+.btn:hover{
+  border-radius: 20px;
+  color: black;
+}
+
+.contact_label{
+  color: white;
+}
+
+input{
+  width: 100%;
+  border-bottom: 2px solid white;
+  height: 40px;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+textarea{
+  width: 100%;
+  height: 80px;
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+}
+
+.contact__about-section.closed .about__me {
+  animation: slideOut-left 1s ease-in-out forwards;
+}
+
+.contact__about-section.closed .contact__form {
+  animation: slideOut-right 1s ease-in-out forwards;
+}
+
+@keyframes slideOut-left {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOut-right {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.contact__btn-container {
+  /* Add an animation to delay the X button appearing on the page */
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
