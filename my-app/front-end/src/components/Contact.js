@@ -1,24 +1,57 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import '../styles/Contact.css';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
+  const form = useRef();
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [successMessage, setSuccessMessage] = useState('');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_hcd3rb8', 'template_x13i4dn', form.current, '1EjIkx3tQWk7XRDAp')
+      .then((result) => {
+          console.log(result.text);
+          setSuccessMessage('Message sent successfully!');
+          setFormSubmitted(true);
+
+          setTimeout(() => {
+            setSuccessMessage(''); // Clear the success message after 5 seconds
+          }, 5000);
+        
+      }, (error) => {
+          console.log(error.text);
+          alert('An error occurred, Please try again');
+      });
+  };
+
+  useEffect(() => {
+    if (formSubmitted) {
+      form.current.reset();
+      setFormSubmitted(false); // Reset the formSubmitted state
+    }
+  }, [formSubmitted]);
+
+
   return (
     <div className="contact__form">
-      <form className='contact__form-form'>
+      <form className='contact__form-form' ref={form} onSubmit={sendEmail}>
         <div className='contact_label'>
           <h2>Name*</h2>
-          <input type="text" name="name"  required />
+          <input type="text" name="from_name"  required />
         </div>
         <div className='contact_label'>
         <h2>Email*</h2>
-          <input type="email" name="email"  required />
+          <input type="email" name="from_email"  required />
         </div>
         <div className='contact_label input_msg'>
         <h2>Message*</h2>
-          <textarea name="message"  required />
+          <textarea name="from_message"  required />
         </div>
-        <button type="submit" className='btn'>Submit</button>
+        <button type="submit" value="Send" className='btn'>Submit</button>
       </form>
+      {successMessage && <p className="success-message">{successMessage}</p>}
     </div>
   );
 };

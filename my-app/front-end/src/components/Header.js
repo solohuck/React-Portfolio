@@ -16,8 +16,8 @@ const Header = ({ onContactClick }) => { // Add the onContactClick prop here
         </div>
       <div className="header_hero">
         <div className='hero_container'>
-          <h1 className="hero_title">Solomon Huckstep,</h1>
-          <h2 className='hero_subtitle'>An aspiring full-stack web developer.</h2>
+          <h1 className="hero_title">Solomon Huckstep</h1>
+          <h2 className='hero_subtitle'>An aspiring full-stack web developer</h2>
           <button onClick={onContactClick} className='hero_button'>About Me</button>
         </div>
       </div>
