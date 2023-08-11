@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf6c0092.css",
+    "main.js": "/static/js/main.41634271.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/solo-react-pic.png": "/static/media/solo-react-pic.54277848bca4d3cc9490.png",
+    "static/media/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg": "/static/media/nahil-naseer-xljtGZ2-P3Y-unsplash.54561b99d15c0b687a83.jpg",
+    "static/media/solo react port .jpg": "/static/media/solo react port .14f67efd0dd6284a2c05.jpg",
+    "index.html": "/index.html",
+    "main.bf6c0092.css.map": "/static/css/main.bf6c0092.css.map",
+    "main.41634271.js.map": "/static/js/main.41634271.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf6c0092.css",
+    "static/js/main.41634271.js"
+  ]
+}
