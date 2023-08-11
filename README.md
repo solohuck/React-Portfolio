@@ -44,7 +44,7 @@ You can visit the live demo of my portfolio at https://solomonhuckstep.dev/
 2. Navigate to the project directory:
 
    ```bash
-   cd your-portfolio
+   cd React-Portfolio-2
    
 3. Install dependencies:
 
