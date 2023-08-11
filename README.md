@@ -39,7 +39,7 @@ You can visit the live demo of my portfolio at https://solomonhuckstep.dev/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-portfolio.git
+   git clone git@github.com:solohuck/React-Portfolio-2.git
    
 2. Navigate to the project directory:
 
