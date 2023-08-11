@@ -25,7 +25,7 @@ This portfolio website serves as a showcase of my software development projects,
 
 ## Demo
 
-You can visit the live demo of my portfolio at (https://solomonhuckstep.dev/).
+You can visit the live demo of my portfolio at https://solomonhuckstep.dev/
 
 ## Technologies
 
@@ -40,31 +40,36 @@ You can visit the live demo of my portfolio at (https://solomonhuckstep.dev/).
 
    ```bash
    git clone https://github.com/your-username/your-portfolio.git
-Navigate to the project directory:
+   
+2. Navigate to the project directory:
 
-bash
-Copy code
-cd your-portfolio
-Install dependencies:
+   ```bash
+   cd your-portfolio
+   
+3. Install dependencies:
 
-bash
-Copy code
-npm install
-Start the development server:
+   ```bash
+   npm install
+   
+4. Start the development server:
 
-bash
-Copy code
-npm start
-Open your browser and go to http://localhost:3000 to see the app.
+   ```bash
+   npm start
+   
+5. Open your browser and go to:
+   ```bash
+   http://localhost:3000 
 
-Usage
+## Usage
+
 Feel free to explore the various sections of the portfolio. Here's a quick overview of the main sections:
 
-Home: Introduction.
-Contact/About: Use the contact form to send me a message directly and learn a little about me.
+Home: Introduction and Navagation.
+Contact: Use the contact form to send me a message directly
+About: learn a little about me and what skills I possess.
 Projects: Showcase of my projects with descriptions and links.
-Skills: Detailed information about the technologies and skills I possess.
 
+## Contact
 
 If you have any questions or want to get in touch, feel free to use the contact form on my portfolio or reach out to me via email at solomonhuckstep.dev@gmail.com.
 
