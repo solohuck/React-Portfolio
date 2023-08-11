@@ -39,12 +39,12 @@ You can visit the live demo of my portfolio at https://solomonhuckstep.dev/
 1. Clone the repository:
 
    ```bash
-   git clone git@github.com:solohuck/React-Portfolio-2.git
+   git clone git@github.com:solohuck/React-Portfolio.git
    
 2. Navigate to the project directory:
 
    ```bash
-   cd React-Portfolio-2
+   cd React-Portfolio
    
 3. Install dependencies:
 
