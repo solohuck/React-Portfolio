@@ -1,180 +1,334 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+/* .5rem = 8px | 1rem = 10px */
+
+:root{
+  --header-height: 3.5rem;
+/* colors */
+  --first-color: hsl(0, 0%, 100%);
+  --gradient-color: linear-gradient(90deg, 
+                      hsl(149, 68%, 31%),
+                      hsl(166, 62%, 25%));
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 100%);
+  --white-color: #fff;
+  --body-color: hsl(144, 91%, 4%);
+/* font and typography */
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "lora", serif;
+  --biggest-font-size: 3rem;
+  --normal-font-size: 1.2rem;
+  --small-font-size: .99rem;
+/* font weight */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+/* z index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* responsive typography */
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/* base */
 *{
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+ul{
   list-style: none;
+}
+
+a{
   text-decoration: none;
 }
 
-li, a, button{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #edf0f1;
-  text-decoration: none;
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* reusable css classes */
+.container{
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.main{
+  overflow: hidden; /* for animations */
 }
 
 .header{
-  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: var(--z-fixed);
+}
+
+.nav{
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo{
+  width: 80px;
+}
+
+.nav__toggle,
+.nav__close{
+  display: inline-flex;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px){
+  .nav__menu{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    background-color: var(--body-color);
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 1px 16px hsla(210, 55%, 24%, .1);
+    padding-block: 3.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2.5rem;
+    transition: top .4s;
+  }
+}
+
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  row-gap: 5rem;
+  height: 80vh;
+}
+
+.nav__link{
+  color: var(--title-color);
+  transition: color .3s;
+}
+
+.nav__link:hover{
+  color: var(--first-color);
+}
+
+.nav__buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: .75rem;
+}
+
+.nav__close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.show-menu{
+  top: 0;
+}
+
+/* home section */
+
+.home{
+  display: relative;
   background-image: url(../img/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg);
   background-size: cover;
 }
 
-
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 20%;
-  animation-name: logo;
-  animation-duration: 3s;
-}
-
-.logo_container{
-  cursor: pointer;
-  color: white;
-}
-
-@keyframes logo {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-
-.navbar_links{
-  list-style: none;
-}
-
-@keyframes nav {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-
-.navbar_links li{
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.navbar_links li a{
-  transition: all 0.3s ease 0s;
-}
-
-.navbar_links li a:hover{
-  color:rgb(131, 131, 131);
-}
-
-button{
-  padding: 9px 25px;
-  background-color: black;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-
-button:hover{
-  color: grey;
-}
-
-.header_hero{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  height: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+.home__container{
+  padding-top: 8rem;
+  height: 100vh;
+  /* align items in center left without flex */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 100px);
-  background-color: #223732;
-  border-radius: 20px;
-  max-width: 130em;
-  max-height: 1000px;
-  animation-name: header;
-  animation-duration: 3s;
+  place-items: center start;
 }
 
-/*if the screeen height is small than 800px then the styles need to change */
-@media screen and (max-height: 650px){
-  .header_hero{
-    grid-template-rows: repeat(4, 60px);
-    grid-template-columns: repeat(3, 1fr);
-    width: 70%;
+.home__content{
+  position: relative;
+  z-index: 2;
+  /* border: solid red 2px; */
+}
+
+.home__data{
+  display: grid;
+  row-gap: 1rem;
+}
+
+.home__subtitle{
+  font-size: var(--small-font-size);
+  color: var(--first-color);
+  letter-spacing: 3px;
+}
+
+.home__title{
+  font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  color: var(--title-color);
+}
+
+.home__description{
+  margin-bottom: 2.5rem;
+}
+
+.home__button{
+  display: inline-block;
+  background: var(--gradient-color);
+  color: var(--white-color);
+  width: max-content;
+  padding: 1rem 2rem;
+  border-radius: .75rem;
+  box-shadow: 0 24px 32px hsl(210, 54%, 24%, .3)
+}
+
+/* for small devices */
+
+@media screen and (max-width: 305px){
+  .container{
+    margin-inline: 1rem;
+  }
+
+  .home__title{
+    font-size: 2rem;
   }
 }
 
-.hero_container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  grid-area: 3/1/4/4;
-  padding: 0 50px;
-  animation-name: hero;
-  animation-duration: 3s;
-}
-
-.hero_title{
-  font-size: 7rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.hero_subtitle{
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 20px;
-  opacity: 0.5;
-}
-
-.hero_button{
-  margin-top: 1em;
-  width: 10em;
-  border-radius: 20px;
-}
-
-.hero_button:hover{
-  border-radius: 0px;
-  color: white;
-}
-
-/*have the header_hero slowly appear on page load*/
-@keyframes hero {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
+/* for taller devices */
+@media screen and (min-width: 376px) and (min-height: 800px){
+  .home__container{
+    padding-top: 10rem;
   }
 }
 
-@keyframes header {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+/* for medium devices */
+
+@media screen and (min-width: 480px){
+  .home__content{
+    max-width: 305px
   }
 }
 
-.contact_btn{
-  background: transparent;
+/* for large devices */
+@media screen and (min-width: 1023px){
+  .nav{
+    height: calc(var(--header-height) + 2rem)
+  }
+
+  .nav__toggle,
+  .nav__close{
+    display: none;
+  }
+
+  .nav__menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav__list{
+    flex-direction: row;
+    column-gap: 5rem;
+  }
+
+  .nav__buttons{
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .nav__logo{
+  
+  }
+
+  .home__content{
+    max-width: 550px;
+  }
+
+  .home__data{
+    row-gap: 1rem;
+  }
+
+  .home__subtitle{
+    font-size: var(--normal-font-size)
+  }
+
+  .home__description{
+    margin-bottom: 3rem;
+  }
 }
+
+@media screen and (min-width: 1120px){
+  .container{
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1300px){
+  .home__container{
+    height: 950px;
+    padding-top: 10rem;
+  }
+
+  ::-webkit-scrollbar{
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(220, 24%, 15%);
+  }
+
+  ::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: hsl(220, 24%, 25%)
+  }
+}
+
+/* for 2k resolutions (2048 x 1150) */
+@media screen and (min-width: 2048px){
+  .continer{
+    max-width: 1300px;
+  }
+
+  .home__container{
+    height: 1200px;
+    padding-top: 15rem;
+  }
+}
+
+
+
+
+
 
 
 

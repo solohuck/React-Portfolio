@@ -12,6 +12,7 @@
     "react-awesome-reveal": "^4.2.5",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "remixicon": "^3.5.0",
     "styled-components": "^6.0.5",
     "web-vitals": "^2.1.4"
   },
