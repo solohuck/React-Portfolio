@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.7fb5121f.css",
+    "main.css": "/static/css/main.ab315119.css",
     "main.js": "/static/js/main.b56e3a38.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg": "/static/media/nahil-naseer-xljtGZ2-P3Y-unsplash.54561b99d15c0b687a83.jpg",
     "index.html": "/index.html",
-    "main.7fb5121f.css.map": "/static/css/main.7fb5121f.css.map",
+    "main.ab315119.css.map": "/static/css/main.ab315119.css.map",
     "main.b56e3a38.js.map": "/static/js/main.b56e3a38.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fb5121f.css",
+    "static/css/main.ab315119.css",
     "static/js/main.b56e3a38.js"
   ]
 }
