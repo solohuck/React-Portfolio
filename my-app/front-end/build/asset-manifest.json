@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd3776a8.css",
+    "main.css": "/static/css/main.28ce803a.css",
     "main.js": "/static/js/main.b56e3a38.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/laura-vinck-Hyu76loQLdk-unsplash.jpg": "/static/media/laura-vinck-Hyu76loQLdk-unsplash.4c96e77fb37116d21d14.jpg",
     "index.html": "/index.html",
-    "main.bd3776a8.css.map": "/static/css/main.bd3776a8.css.map",
+    "main.28ce803a.css.map": "/static/css/main.28ce803a.css.map",
     "main.b56e3a38.js.map": "/static/js/main.b56e3a38.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd3776a8.css",
+    "static/css/main.28ce803a.css",
     "static/js/main.b56e3a38.js"
   ]
 }
