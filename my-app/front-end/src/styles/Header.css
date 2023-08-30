@@ -113,6 +113,15 @@ textarea {
   padding: 10rem 0 25rem 0;
 }
 
+.header__link-wrapper{
+  border: 2px solid black;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 20rem;
+  display: grid;
+  place-items: center;
+}
+
 .header__link:hover{
   color: #fff;
   transition: .4s;
@@ -145,6 +154,7 @@ textarea {
   place-items: center;
   text-align: center;
   width: 100%;
+  font-weight: 600;
 }
 
 .text__primary{
