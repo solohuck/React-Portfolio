@@ -24,6 +24,18 @@ const About = () =>{
                     </p> 
                     <button className='contact__btn'>Contact </button>
                 </div>
+                <div className='my__skills'>
+                    <div className='skill__title'> My Skills</div>
+                    <ul className='skills__content'>
+                        <li className='single__skill'>HTML</li>
+                        <li className='single__skill'>CSS</li>
+                        <li className='single__skill'>JavaScript</li>
+                        <li className='single__skill'>React</li>
+                        <li className='single__skill'>GIT</li>
+                        <li className='single__skill'>Github</li>
+                        <li className='single__skill'>Responsive Design</li>
+                    </ul>
+                </div>
             </div>
         </div>
         </section>

@@ -65,6 +65,7 @@ html {
     top: 70rem;
     display: grid;
     place-items: center;
+    background-color: #f7f7f7;
 }
 
 .about__content{
@@ -92,7 +93,7 @@ html {
     padding-bottom: 9rem;
     color: #666;
 }
-.text__primary-about{
+.text__primary-about {
     display: grid;
     place-items: start;
     text-align: left;
@@ -128,5 +129,35 @@ html {
     background-color: bisque;
     margin-top: 2rem;
     color: black;
+}
+
+.my__skills{
+    margin-top: 10rem;
+    width: 90vw;
+    margin-bottom: 10rem;
+}
+
+.skill__title{
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding-bottom: 2.5rem;
+    display: grid;
+    place-items: left;
+}
+
+.skills__content{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.single__skill{
+    padding: 1rem 2rem;
+    margin-bottom: 1.8rem;
+    margin-right: 2rem;
+    font-size: 1.6rem;
+    background: rgba(153,153,153,.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #666
 }
 
