@@ -4,25 +4,31 @@ import '../styles/Header.css';
 const Home = () => {
   useEffect(() => {
     // Show menu
-    const navToggle = document.getElementById('nav-toggle');
-    const navClose = document.getElementById('nav-close');
-    const navMenu = document.getElementById('nav-menu');
+    const navToggle = document.getElementById('nav__toggle');
+    const navClose = document.getElementById('nav__close');
+    const navMenu = document.getElementById('nav__menu');
 
     // Menu show
     const handleNavToggleClick = () => {
       console.log('toggle');
-      navMenu.classList.add('show-menu');
+      navClose.classList.remove('none');
+      navToggle.classList.add('none');
+      navMenu.classList.remove('header__link-hide')
     };
 
     // Menu hidden
     const handleNavCloseClick = () => {
       console.log('close');
-      navMenu.classList.remove('show-menu');
+      navToggle.classList.remove('none');
+      navClose.classList.add('none');
+      navMenu.classList.add('header__link-hide')
     };
 
     // Link action
     const handleNavLinkClick = () => {
-      navMenu.classList.remove('show-menu');
+      navMenu.classList.add('header__link-hide');
+      navToggle.classList.remove('none');
+      navClose.classList.add('none');
     };
 
     if (navToggle) {
@@ -33,7 +39,7 @@ const Home = () => {
       navClose.addEventListener('click', handleNavCloseClick);
     }
 
-    const navLinks = document.querySelectorAll('.nav__link');
+    const navLinks = document.querySelectorAll('.header__link');
     navLinks.forEach((link) => {
       link.addEventListener('click', handleNavLinkClick);
     });
@@ -54,67 +60,52 @@ const Home = () => {
 
   return (
     <section>
-    <header className='header' id='header'>
-      <nav className="nav container">
-        <a href="./" className='nav__logo'>
-          SH
-        </a>
+      <header className='header'>
+        <div className='header__content'>
+          <div className='logo__container'>
+            <div className='logo__img'>
 
-        <div className="nav__menu" id='nav-menu'>
-          <ul className="nav__list">
-            <li className="nav__item">
-              <a href="./" className="nav__link">Home</a>
-            </li>
-
-            <li className="nav__item">
-              <a href="#Projects" className="nav__link">Projects</a>
-            </li>
-
-            <li className="nav__item">
-              <a href="#Contacts" className="nav__link">Contact</a>
-            </li>
-
-            <li className="nav__item">
-              <a href="#Resume" className="nav__link">Resume</a>
-            </li>
-          </ul>
-
-          {/* close button */}
-          <div className='nav__close' id="nav-close">
-            <i className="ri-close-line"></i>
+            </div>
+            <span className='name'>Solomon Huckstep</span>
+          </div>
+          <div className='header__main'>
+            <ul className='header__links header__link-hide' id='nav__menu'>
+              <li className='header__link-wrapper nav__link' id='nav__link'>
+                <a href='./' className='header__link'> Home </a>
+              </li>
+              <li className='header__link-wrapper'>
+                <a href='./#about' className='header__link'> About </a>
+              </li>
+              <li className='header__link-wrapper'>
+                <a href='./#projects' className='header__link'> Projects </a>
+              </li>
+              <li className='header__link-wrapper'>
+                <a href='./#contact' className='header__link'> Contact </a>
+              </li>
+            </ul>
+            <div className='hamburger__menu-content'>
+              <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg" 
+              alt="hamburger menu" id='nav__toggle'></img>
+              <img src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg" 
+              alt="hamburger menu close" className="none" id='nav__close'></img>
+            </div>
           </div>
         </div>
-
-          {/* Toggle button */}
-          <div className='nav__toggle' id="nav-toggle">
-          <i className="ri-menu-line"></i>
-          </div>
-      </nav>
-    </header>
-    
-    <main className='main'>
-        <section className='home'>
-          <div className='home__container container'>
-            <div className='home__content'>
-              <div className='home__data'>
-                <h3 className='home__subtitle'>
-                  Hello,
-                </h3>
-                <h1 className='home__title'>
-                  I'm Solomon Hucktep
-                </h1>
-                <p className='home__description'>
-                  Front-End Web Developer
-                </p>
-                <a href='./' className='home__button'>
-                  About me
-                </a>
-              </div>
-            </div> 
-          </div>
-        </section>
-      </main>
+      </header>
       
+      <section className='home__hero'>
+        <div className='home__content'>
+          <h1 className='heading__primary'> Hey, I'm Solomon <br/> Huckstep</h1>
+          <div className='home__info'>
+            <p className='text__primary'>
+              An aspiring Front-end Web Developer with a flair for design and a passion for innovation
+            </p>
+          </div>
+          <div className='home__btn'>
+            <a href='./#projects' className='btn'>Projects</a>
+          </div>
+        </div>
+      </section>
     </section>
   );
 };
