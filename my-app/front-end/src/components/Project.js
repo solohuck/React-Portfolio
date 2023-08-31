@@ -1,48 +1,35 @@
 import React from "react";
 import "../styles/Project.css";
-import "../img/solo react port .jpg";
 
 const Project = () => {
   return (
-    <section id="projects" className="project__section">
-      <div className="project__content">
-        <ul className="project__list">
-          <li className="project__list-item reat-port">
-          <div className="item_container">
-              <div className="item_name ">REACT PORTFOLIO</div>
-              <div className="item_description">
-                A portfolio website built with React.js, HTML, CSS, and JavaScript.
-              </div>
-              <button className="item_button">
-                <a href="https://github.com/solohuck/React-Portfolio-2">REPO</a></button>
-            </div>
-          </li>
-          <li className="project__list-item">
-            <div className="item_container">
-              <div className="item_name">MENTAL MATH</div>
-              <div className="item_description">
-                A mental math game built with React.js, HTML, CSS, and JavaScript.
-              </div>
-              <button className="item_button">REPO</button>
-            </div>
-          </li>
-          <li className="project__list-item">
-          <div className="item_container">
-              <div className="item_name">COMING SOON...</div>
-              <div className="item_description">
-                
-              </div>
-            </div>
-          </li>
-          <li className="project__list-item">
-          <div className="item_container">
-              <div className="item_name">COMING SOON...</div>
-              <div className="item_description">
-               
-              </div>
-            </div>
-          </li>
-        </ul>
+    <section id="projects" className="projects">
+      <div className="projects__content">
+        <div className="project__title"> Projects </div>
+        <p className="project__description">
+          Here you will find some of the personal and 
+          clients projects that I created with each project 
+          containing its own case study
+        </p>
+        <div className="project__container">
+
+        </div>
+        <div className="single__project__title"> Portfolio</div>
+        <p className="single__project__description">
+          Dopefolio is a successful Open-Source project that I created 
+          which have been featured on some of the biggest tech sites like 
+          CSS-Tricks, Hostinger, etc & used by thousands of developers globally
+        </p>
+        <button className="case__study__btn"> source code </button>
+        <div className="project__container">
+          
+        </div>
+        <p className="single__project__description">
+          Dopefolio is a successful Open-Source project that I created 
+          which have been featured on some of the biggest tech sites like 
+          CSS-Tricks, Hostinger, etc & used by thousands of developers globally
+        </p>
+        <button className="case__study__btn"> source code </button>
       </div>
     </section>
   );
