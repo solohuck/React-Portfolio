@@ -93,12 +93,14 @@ html {
     text-align: center;
     padding-bottom: 9rem;
     color: #666;
+    line-height: 3rem;
 }
 .text__primary-about {
     display: grid;
     place-items: start;
     text-align: left;
     line-height: 1.7;
+    line-height: 3rem;
 }
 
 .text__title{
@@ -119,17 +121,18 @@ html {
 }
 
 .contact__btn{
-    border: 2px solid black;
-    display: grid;
-    place-items: center;
-    width: 15rem;
-    height: 5rem;
-    font-size: 1.7rem;
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-    background-color: bisque;
-    margin-top: 2rem;
-    color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15rem;
+  margin-top: 2.5rem;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+  transition: transform .3s;
+  padding: 1.5rem 5rem;
+  font-size: 1.7rem;
+  background-color: bisque;
+  border: 2px solid black;
 }
 
 .my__skills{

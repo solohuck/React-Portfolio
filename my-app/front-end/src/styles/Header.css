@@ -98,7 +98,6 @@ textarea {
   cursor: pointer;
 }
 
-
 .header__links{
   position: absolute;
   top: 7rem;
@@ -107,19 +106,27 @@ textarea {
   display: grid;
   place-items: center;
   height: 100vh;
-  font-size: 2rem;
-  background-color: antiquewhite;
+  font-size: 2.4rem;
+  background-color: #b5b5b5a5;
+  /* blur background */
+  backdrop-filter: blur(10px);
   transition: .4s;
   padding: 10rem 0 25rem 0;
 }
 
 .header__link-wrapper{
   border: 2px solid black;
-  padding: 2rem;
-  border-radius: 1rem;
   width: 20rem;
   display: grid;
   place-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 1.5rem 5rem;
+  font-size: 1.7rem;
+  background-color: bisque;
+
 }
 
 .header__link:hover{
@@ -170,10 +177,16 @@ textarea {
   place-items: center;
   text-align: center;
   width: 25rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   padding: 1rem 2rem;
-  border-radius: 1rem;
   background-color: bisque;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+  transition: transform .3s;
+  padding: 1.5rem 5rem;
 }
 
 

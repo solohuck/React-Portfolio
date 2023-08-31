@@ -24,6 +24,7 @@ const Project = () => {
         <div className="project__container">
           
         </div>
+        <div className="single__project__title"> Portfolio</div>
         <p className="single__project__description">
           Dopefolio is a successful Open-Source project that I created 
           which have been featured on some of the biggest tech sites like 
