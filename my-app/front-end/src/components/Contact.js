@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import '../styles/Contact.css';
 import emailjs from '@emailjs/browser';
 
-const ContactForm = () => {
+const Contact = () => {
   const form = useRef();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
@@ -35,79 +35,33 @@ const ContactForm = () => {
 
 
   return (
-    <div className="contact__form">
-      <form className='contact__form-form' ref={form} onSubmit={sendEmail}>
-        <div className='contact_label'>
-          <h2>Name*</h2>
-          <input type="text" name="from_name"  required />
-        </div>
-        <div className='contact_label'>
-        <h2>Email*</h2>
-          <input type="email" name="from_email"  required />
-        </div>
-        <div className='contact_label input_msg'>
-        <h2>Message*</h2>
-          <textarea name="from_message"  required />
-        </div>
-        <button type="submit" value="Send" className='btn'>Submit</button>
-      </form>
-      {successMessage && <p className="success-message">{successMessage}</p>}
-    </div>
-  );
-};
-
-const AboutMe = () => {
-  return (
-    <div className="about__me">
-      <div className='about__me-container'>
-        <div className='about__me-title'>
-          <h2>About Me.</h2>
-          <h3>interactive front-end developer.</h3>
-        </div>
-        <div className='about__me-text'>
-          <p>
-            I'm Riccardo Zanutta, a 22-year-old Italian Freelance Front-end developer. I'm a weird guy who likes making weird things with web technologies.
-            I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
-            When not working or futzing around with code, I study how to escape from University. Actually for hire.
-          </p>
-        </div>
-        <div className='about__me-skills'>
+    <section className='contact' id='contact'>
+      <div className='contact__content'>
+        <div className='contact__title'>Contact</div>
+        <p className='contact__description'>
+          Feel free to Contact me by submitting the form below 
+          and I will get back to you as soon as possible
+        </p>
+        <div className="form__container">
+          <form className='contact__form' ref={form} onSubmit={sendEmail}>
+            <div className='contact__label'>
+              <h2>Name</h2>
+              <input type="text" required placeholder="Enter Your Name" name="from_name" />
+            </div>
+            <div className='contact__label'>
+              <h2>Email</h2>
+              <input type="email" required placeholder="Enter Your Email" name="from_email" />
+            </div>
+            <div className='contact__label input_msg'>
+              <h2>Message</h2>
+              <textarea name="from_message" required placeholder="Enter Your Message" />
+            </div>
+            <button type="submit" value="Send" className='submit__btn'>Submit</button>
+          </form>
+          {successMessage && <p className="success-message">{successMessage}</p>}
         </div>
       </div>
-    </div>
-  );
-};
-
-
-const Contact = ({ onClose }) => {
-  const [isClosed, setIsClosed] = useState(false);
-
-  const handleClose = () => {
-    setIsClosed(true);
-    setTimeout(() => {
-      onClose();
-    }, 1000); // Delay the actual closing for 1 second to allow the animation to complete
-  };
-
-  if (isClosed) {
-    document.body.classList.remove('no-scroll');
-    
-  } else {
-    document.body.classList.add('no-scroll');
-  }
-
-  return (
-    <div className={`contact__about-section ${isClosed ? 'closed' : ''}`}>
-      {!isClosed && (
-        <div className="contact-btn-container">
-          <button className="close-btn" onClick={handleClose}>X</button>
-        </div>
-      )}
-      <div className={`contact-about-content ${isClosed ? 'closed' : ''}`}>
-        <AboutMe />
-        <ContactForm />
-      </div>
-    </div>
+    </section>
   );
 };
 

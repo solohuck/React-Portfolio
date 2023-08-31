@@ -1,260 +1,150 @@
-/* Contact.css
-.contact__about-section {
-  position: fixed;
-  top: 30px;
-  left: 100px;
-  right: 100px;
-  bottom: 30px;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+*,::after,::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit
 }
 
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-  background: transparent;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth
 }
 
-
-.close-btn:hover {
-  color: black;
-}
-
-.contact-about-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 100px);
-  height: 100%;
-  width: 100%;
-  background: transparent
-}
-
-.about__me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-area: 1 / 3 / 6/ 1;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 50px);
-  background-color: rgb(255, 255, 255);
-  background-size: cover;
-  color: black;
-}
-
-/*create animation so about_me comes in from the left smootly*/
-.about__me{
-  animation: slideIn-left 1s ease-in-out;
-}
-
-@keyframes slideIn-left {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
+@media only screen and (max-width: 75em) {
+  html {
+      font-size:59%
   }
 }
 
-.contact__form{
-  animation: slideIn-right 1s ease-in-out;
-}
-
-@keyframes slideIn-right {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
+@media only screen and (max-width: 56.25em) {
+  html {
+      font-size:56%
   }
 }
 
-.close-btn{
-  animation: close-btn 3s ease-in-out;
-}
-
-@keyframes close-btn {
-  0% {
-    
-    opacity: 0;
-  }
-  100% {
-    
-    opacity: 1;
+@media only screen and (min-width: 112.5em) {
+  html {
+      font-size:65%
   }
 }
 
-.about__me-title{
-  font-size: 1.7rem;
-  font-weight: bold;
+body {
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: 'Source Sans Pro',sans-serif
 }
 
-.about__me-title h3{
-  font-size: 1.3rem;
-  font-weight: lighter;
-  margin: 5px 0px;
+a {
+  text-decoration: none;
+  color: inherit
 }
 
-.contact__form {
+li {
+  list-style: none
+}
+
+a:focus,button:focus,input:focus,textarea:focus {
+  outline: 0
+}
+
+button {
+  border: none;
+  cursor: pointer
+}
+
+textarea {
+  resize: none
+}
+
+.contact{
+  position: relative;
+  top: 65rem;
+  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
-  align-items: center;
-  grid-area: 1 / 3 / 6/ 5;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 50px);
-  background-color: #223732;
 }
 
-.contact__form-form {
+.contact__content{
+  width: 90vw;
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
-  height: 400px;
-  width: 400px;
-  grid-area: 6/4/1/2;
-}
-
-.about__me-container{
-  display: flex;
-  padding: 50px 0px;
-  flex-direction: column;
-  height: 400px;
-  width: 400px;
-  grid-area: 6/4/1/2;
-}
-
-.about__me-text{
-  margin-top: 20px;
-  font-size: 1.4rem;
-  text-align: justify;
-  max-width: 50ch;
-}
-
-.btn{
-  display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: white;
-  width: 150px;
-  color: black;
-  margin-top: 20px;
 }
 
-.btn:hover{
-  border-radius: 20px;
-  color: black;
-}
-
-.contact_label{
-  color: white;
-}
-
-input{
-  width: 100%;
-  border-bottom: 2px solid white;
-  height: 40px;
-  background: transparent;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-}
-
-textarea{
-  width: 100%;
-  height: 80px;
-  background: transparent;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 2px solid white;
-}
-
-.contact__about-section.closed .about__me {
-  animation: slideOut-left 1s ease-in-out forwards;
-}
-
-.contact__about-section.closed .contact__form {
-  animation: slideOut-right 1s ease-in-out forwards;
-}
-
-@keyframes slideOut-left {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-}
-
-@keyframes slideOut-right {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-}
-
-body.no-scroll {
-  overflow: hidden;
-}
-
-.contact__btn-container {
-  /* Add an animation to delay the X button appearing on the page */
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards 1s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.success-message {
-  position: fixed;
-  margin-top: 25px;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: grey;
-  padding: 10px 20px;
-  border-radius: 10px;
-  color: white;
-  font-weight: bold;
+.contact__title{
+  display: grid;
+  place-items: center;
   text-align: center;
-  z-index: 1000; /* Ensure it's above other content */
-  animation: fadeOut 5s ease-in-out; /* Add a fade-out animation */
+  width: 100%;
+  font-size: 4rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  padding-top: 10rem;
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+.contact__description{
+  font-size: 1.7rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding-bottom: 9rem;
+    color: #666;
 }
 
-input, textarea{
-  color: white;
-} */
+.form__container{
+  width: 90vw;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+  padding: 3rem;
+  margin-bottom: 10rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  color: #333;
+  padding: 2rem;
+  border: 1px solid #ebebeb;
+  font-size: 1.6rem;
+  letter-spacing: 0;
+  background: #f0f0f0;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+textarea {
+  height: 25rem;
+  resize: none;
+}
+
+.submit__btn{
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+  transition: transform .3s;
+  padding: 1.5rem 5rem;
+  font-size: 1.7rem;
+  background-color: bisque;
+  border: 2px solid black;
+  margin-bottom: 2rem;
+}
+
+.contact__label h2{
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: left;
+}
 
 

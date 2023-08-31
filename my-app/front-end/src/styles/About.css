@@ -84,6 +84,8 @@ html {
     font-size: 4rem;
     font-weight: 600;
     padding-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
 }
 
 .about__description{
