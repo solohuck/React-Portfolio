@@ -68,6 +68,12 @@ textarea {
   justify-content: center;
 }
 
+@media screen and (min-width: 600px) {
+  .contact{
+    top: 0;
+  }
+}
+
 .contact__content{
   width: 90vw;
   display: flex;
@@ -95,6 +101,12 @@ textarea {
     text-align: center;
     padding-bottom: 9rem;
     color: #666;
+}
+
+@media screen and (min-width: 600px) {
+  .contact__description{
+    max-width: 90%;
+  }
 }
 
 .form__container{
@@ -139,6 +151,12 @@ textarea {
   border: 2px solid black;
   margin-bottom: 2rem;
   color: black;
+}
+
+@media screen and (min-width: 600px) {
+  .submit__btn{
+    width: 30%;
+  }
 }
 
 .contact__label h2{

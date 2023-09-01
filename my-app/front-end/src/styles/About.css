@@ -69,6 +69,12 @@ html {
     margin-bottom: 10rem;
 }
 
+@media screen and (min-width: 600px) {
+    .about{
+        top: 0;
+    }
+}
+
 .about__content{
     margin-top: 9rem;
     display: grid;
@@ -117,6 +123,12 @@ html {
     font-size: 1.7rem;
 }
 
+@media screen and (min-width: 600px) {
+    .text__space{
+        width: 80%;
+    }
+}
+
 .contact__button{
     display: grid;
     place-items: left;
@@ -142,6 +154,16 @@ html {
     margin-top: 10rem;
     width: 90vw;
     margin-bottom: 10rem;
+}
+
+@media screen and (min-width: 600px) {
+    .my__skills{
+        margin-top: 0;
+    }
+
+    .contact__btn{
+        margin-bottom: 10rem;
+    }
 }
 
 .skill__title{

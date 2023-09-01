@@ -70,18 +70,10 @@ const Home = () => {
           </div>
           <div className='header__main'>
             <ul className='header__links header__link-hide' id='nav__menu'>
-              <li className='header__link-wrapper nav__link' id='nav__link'>
-                <a href='./' className='header__link'> Home </a>
-              </li>
-              <li className='header__link-wrapper'>
-                <a href='./#about' className='header__link'> About </a>
-              </li>
-              <li className='header__link-wrapper'>
-                <a href='./#projects' className='header__link'> Projects </a>
-              </li>
-              <li className='header__link-wrapper'>
-                <a href='./#contact' className='header__link'> Contact </a>
-              </li>
+              <a href='./' className='header__link' id='nav__link'> Home </a>
+              <a className='header__link' href='./#about'>About</a>
+              <a href='./#projects' className='header__link'> Projects </a>
+              <a href='./#contact' className='header__link'> Contact </a>
             </ul>
             <div className='hamburger__menu-content'>
               <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg" 
@@ -101,9 +93,7 @@ const Home = () => {
             Aspiring Full Stack Web Developer | Eager to Grow, Learn, and Innovate 
             </p>
           </div>
-          <div className='home__btn'>
-            <a href='./#projects' className='btn'>Projects</a>
-          </div>
+          <a className='home__btn btn' href='./#projects'>Projects</a>
         </div>
       </section>
     </section>

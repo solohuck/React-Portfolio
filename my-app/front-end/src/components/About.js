@@ -22,7 +22,7 @@ const About = () =>{
                     <p className='text__space'> 
                         I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me. 
                     </p> 
-                    <button className='contact__btn'>Contact </button>
+                    <a href="./#contact"className='contact__btn'>Contact </a>
                 </div>
                 <div className='my__skills'>
                     <div className='skill__title'> My Skills</div>
