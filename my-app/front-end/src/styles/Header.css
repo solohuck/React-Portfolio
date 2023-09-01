@@ -103,15 +103,17 @@ textarea {
   top: 7rem;
   left: 0;
   width: 100%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 5rem;
   height: 100vh;
   font-size: 2.4rem;
   background-color: #b5b5b5a5;
-  /* blur background */
   backdrop-filter: blur(10px);
   transition: .4s;
-  padding: 10rem 0 25rem 0;
+  padding-bottom: 7rem;
 }
 
 .header__link-wrapper{
