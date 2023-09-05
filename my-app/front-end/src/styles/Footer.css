@@ -75,6 +75,18 @@ html {
   .footer{
     top: 0;
   }
+
+  .footer__container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social__container,
+  .myname__container{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
 }
 
 .footer__content{
