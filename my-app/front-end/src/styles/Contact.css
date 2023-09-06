@@ -109,6 +109,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .contact__description{
+    max-width: 70%;
+  }
+}
+
 .form__container{
   width: 90vw;
   border-radius: 5px;
@@ -116,6 +122,12 @@ textarea {
   box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
   padding: 3rem;
   margin-bottom: 10rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .form__container{
+    width: 75vw;
+  }
 }
 
 input,
