@@ -128,7 +128,7 @@ textarea {
   letter-spacing: 1px;
 }
 
-/* for mobile */
+/* for mobile 600px */
 @media  screen and (max-width: 600px) {
   
   .header__links{
@@ -194,7 +194,7 @@ textarea {
   
   }
   
-  /* remove mobile menu */
+  /* remove mobile menu 600px */
   @media screen and (min-width: 600px) {
     .hamburger__menu-content{
       display: none;

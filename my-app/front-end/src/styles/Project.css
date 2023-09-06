@@ -68,12 +68,6 @@ html {
     justify-content: center;
   }
 
-  @media screen and (min-width: 600px) {
-    .projects{
-      top: 0;
-    }
-  }
-
   .projects__content{
     width: 90vw;
     display: flex;
@@ -106,12 +100,6 @@ html {
     width: 90%;
     margin-bottom: 4rem;
     border-radius: 1rem;
-}
-
-@media screen and (min-width: 600px) {
-  .project__container{
-    height: 40rem;
-  }
 }
 
 .single__project__title{
@@ -149,8 +137,16 @@ html {
   color: black;
 }
 
-  
+/* 600px */
+@media screen and (min-width: 600px) {
+  .projects{
+    top: 0;
+  }
 
+  .project__container{
+    height: 40rem;
+  }
+}
 
 
 

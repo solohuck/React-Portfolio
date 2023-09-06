@@ -68,11 +68,6 @@ textarea {
   justify-content: center;
 }
 
-@media screen and (min-width: 600px) {
-  .contact{
-    top: 0;
-  }
-}
 
 .contact__content{
   width: 90vw;
@@ -103,18 +98,6 @@ textarea {
     color: #666;
 }
 
-@media screen and (min-width: 600px) {
-  .contact__description{
-    max-width: 90%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .contact__description{
-    max-width: 70%;
-  }
-}
-
 .form__container{
   width: 90vw;
   border-radius: 5px;
@@ -122,12 +105,6 @@ textarea {
   box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
   padding: 3rem;
   margin-bottom: 10rem;
-}
-
-@media screen and (min-width: 1024px) {
-  .form__container{
-    width: 75vw;
-  }
 }
 
 input,
@@ -165,12 +142,6 @@ textarea {
   color: black;
 }
 
-@media screen and (min-width: 600px) {
-  .submit__btn{
-    width: 30%;
-  }
-}
-
 .contact__label h2{
   font-weight: 700;
   margin-bottom: 1rem;
@@ -178,4 +149,33 @@ textarea {
   text-align: left;
 }
 
+/* 600px */
+@media screen and (min-width: 600px) {
+  .submit__btn{
+    width: 30%;
+  }
 
+  .contact{
+    top: 0;
+  }
+
+  .contact__description{
+    max-width: 90%;
+  }
+}
+
+
+/* 1024px */
+@media screen and (min-width: 1024px) {
+  .contact__description{
+    max-width: 70%;
+  }
+
+  .form__container{
+    width: 75vw;
+  }
+
+  .contact__description{
+    max-width: 80%;
+  }
+}
