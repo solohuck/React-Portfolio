@@ -11,26 +11,32 @@ const Project = () => {
           clients projects that I created with each project 
           containing its own case study
         </p>
-        <div className="project__container">
 
+        <div className="sinlge__project-container">
+          <div className="project__container"></div>
+          <div className="project__mini-container">
+            <div className="single__project__title"> Portfolio</div>
+            <p className="single__project__description">
+              Dopefolio is a successful Open-Source project that I created 
+              which have been featured on some of the biggest tech sites like 
+              CSS-Tricks, Hostinger, etc & used by thousands of developers globally
+            </p>
+            <button className="case__study__btn"> source code </button>
+          </div>
         </div>
-        <div className="single__project__title"> Portfolio</div>
-        <p className="single__project__description">
-          Dopefolio is a successful Open-Source project that I created 
-          which have been featured on some of the biggest tech sites like 
-          CSS-Tricks, Hostinger, etc & used by thousands of developers globally
-        </p>
-        <button className="case__study__btn"> source code </button>
-        <div className="project__container">
-          
+
+        <div className="sinlge__project-container">
+          <div className="project__container"></div>
+          <div className="project__mini-container">
+            <div className="single__project__title"> Portfolio</div>
+            <p className="single__project__description">
+              Dopefolio is a successful Open-Source project that I created 
+              which have been featured on some of the biggest tech sites like 
+              CSS-Tricks, Hostinger, etc & used by thousands of developers globally
+            </p>
+            <button className="case__study__btn"> source code </button>
+          </div>
         </div>
-        <div className="single__project__title"> Portfolio</div>
-        <p className="single__project__description">
-          Dopefolio is a successful Open-Source project that I created 
-          which have been featured on some of the biggest tech sites like 
-          CSS-Tricks, Hostinger, etc & used by thousands of developers globally
-        </p>
-        <button className="case__study__btn"> source code </button>
       </div>
     </section>
   );
