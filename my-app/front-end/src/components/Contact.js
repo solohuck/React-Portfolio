@@ -50,7 +50,7 @@ const Contact = () => {
             </div>
             <div className='contact__label'>
               <h2>Email</h2>
-              <input type="email" required placeholder="Enter Your Email" name="from_email" />
+              <input type="email" required placeholder="Enter Your Email" name="user_email" />
             </div>
             <div className='contact__label input_msg'>
               <h2>Message</h2>
