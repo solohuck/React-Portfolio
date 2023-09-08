@@ -21,7 +21,7 @@
   place-items: center;
   text-align: center;
   width: 100%;
-  font-size: 4rem;
+  font-size: 3.1rem;
   font-weight: 600;
   padding-bottom: 2rem;
   text-transform: uppercase;
@@ -30,7 +30,7 @@
 }
 
 .contact__description{
-  font-size: 1.7rem;
+  font-size: 1.6rem;
     display: grid;
     place-items: center;
     text-align: center;
@@ -74,8 +74,8 @@ textarea {
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
   transition: transform .3s;
-  padding: 1.5rem 5rem;
-  font-size: 1.7rem;
+  padding: 1.2rem 4rem;
+  font-size: 1.6rem;
   background-color: bisque;
   border: 2px solid black;
   margin-bottom: 2rem;

@@ -58,7 +58,7 @@ textarea {
 }
 
 .project__title{
-  font-size: 4rem;
+  font-size: 3.1rem;
   font-weight: 600;
   text-align: center;
   margin-bottom: 4rem;
@@ -67,11 +67,11 @@ textarea {
 }
 
 .project__description{
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   display: grid;
   place-items: center;
   text-align: center;
-  padding-bottom: 9rem;
+  padding-bottom: 4rem;
   color: #666;
 }
 
@@ -111,8 +111,8 @@ textarea {
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
   transition: transform .3s;
-  padding: 1.5rem 5rem;
-  font-size: 1.7rem;
+  padding: 1.2rem 4rem;
+  font-size: 1.6rem;
   background-color: bisque;
   border: 2px solid black;
   color: black;
