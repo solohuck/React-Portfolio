@@ -163,8 +163,21 @@
   }
 
 
+@media screen and (min-width: 1024px) {
+  .heading__primary{
+    font-size: 4rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    
+  }
 
+  .text__primary{
+    font-size: 3.1rem;
+    max-width: 80vw;
+  }
   
+}
 
 
 
