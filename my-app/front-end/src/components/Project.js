@@ -26,7 +26,7 @@ const Project = () => {
         </div>
 
         <div className="sinlge__project-container">
-          <div className="project__container"></div>
+          <div className="project__container_"></div>  
           <div className="project__mini-container">
             <div className="single__project__title"> Portfolio</div>
             <p className="single__project__description">
