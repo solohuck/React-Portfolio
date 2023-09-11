@@ -15,11 +15,11 @@ const About = () =>{
                     <div className='text__primary-about'>
                         <div className='text__title'> Get to know me! </div>
                         <p className='text__space'> 
-                            As a motivated IT computer operator with a passion for programming, my objective is to secure a position as front-end web Developer. 
-                            With a foundation in computer hardware, software, operating systems, and programming, I am eager to expand my knowledge and contribute to the development of innovative front-end designs. 
+                            As a motivated IT computer operator with a passion for programming, my objective is to secure a position as a front-end web Developer. 
+                            With a foundation in computer hardware, software, operating systems, and programming, I am eager to expand my knowledge and contribute to the development of innovative front-end web designs. 
                         </p> 
                         <p className='text__space'> 
-                            I attended a Full stack Web Developement bootamp from Aug. 2022 - Feb 2023. After completing the bootcamp I was attracted to Front-end Development of Websites and Web Applications. Check out the source code for my recent projects down below. 
+                            I attended a Full stack Web Developement bootcamp from Aug. 2022 - Feb 2023. After completing the bootcamp I was attracted to Front-end web Development. Check out the source code to my projects in the project section. 
                         </p> 
                         <p className='text__space'> 
                             I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me. 

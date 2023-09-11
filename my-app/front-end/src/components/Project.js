@@ -32,7 +32,7 @@ const Project = () => {
           <div className="project__mini-container">
             <div className="single__project__title"> Mental Math App</div>
             <p className="single__project__description">
-              The mental math app is a currently a work in progess project. It's a simple 
+              The mental math app is currently a work in progess. It's a simple 
               mental math trainer that's been made to feel like a game with streaks, high scores, and lives.
             </p>
             <button className="case__study__btn"> 
