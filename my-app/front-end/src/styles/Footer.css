@@ -83,3 +83,10 @@
     font-size: 1.5rem;
   }
 }
+
+/* 1440p laptop */
+ @media screen and (min-width: 1440px) {
+  .footer__content{
+    max-width: 120rem;
+  }
+ }

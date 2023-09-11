@@ -180,7 +180,14 @@
     font-size: 2.2rem;
     max-width: 80vw;
   }
+
+  .header__links{
+    font-size: 1.6rem;
+  }
   
+  .name{
+    font-size: 1.8rem;
+  }
 }
 
 

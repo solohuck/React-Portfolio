@@ -1,8 +1,8 @@
 .about{
     position: relative;
     top: 60rem;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     background-color: #f7f7f7;
     margin-bottom: 10rem;
 }
@@ -178,3 +178,18 @@
     }
 }
 
+/* 1440p laptop */
+
+@media screen and (min-width: 1440px) {
+    .about__description{
+        max-width: 83rem;
+    }
+
+    .about__container{
+        width: 115rem;
+    }
+
+    .my__skills{
+        max-width: 50rem;
+    }
+}

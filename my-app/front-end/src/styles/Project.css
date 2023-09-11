@@ -191,6 +191,17 @@ textarea {
   } 
 }
 
+/* 1440p laptop */
+
+@media screen and (min-width: 1440px) {
+  .sinlge__project-container{
+    max-width: 115rem  
+  }
+
+  .project__description{
+    max-width: 80rem;
+  }
+}
 
 
 

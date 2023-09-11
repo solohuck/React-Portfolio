@@ -123,3 +123,15 @@ textarea {
   }
 
 }
+
+
+/* 1440p laptop */
+@media screen and (min-width: 1440px) {
+  .form__container{
+    max-width: 85rem;
+  }
+  
+  .contact__description{
+    max-width: 80rem;
+  }
+}
