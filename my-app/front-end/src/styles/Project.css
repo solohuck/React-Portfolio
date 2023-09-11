@@ -199,7 +199,7 @@ textarea {
   .project__container,
   .project__container_{
     margin-bottom: 0rem;
-    width: 60%;
+    width: 50rem;
     height: 30rem;
   }
 
@@ -231,6 +231,7 @@ textarea {
   .project__container_{
     background-size: 600px;
     height: 38rem;
+    width: 70rem;
   }
 }
 
