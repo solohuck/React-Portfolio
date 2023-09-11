@@ -95,6 +95,10 @@ textarea {
   width: 90%;
   margin-bottom: 4rem;
   border-radius: 1rem;
+  background-image: url(../img/math\ game.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 310px;
 }
 
 .single__project__title{
@@ -149,10 +153,16 @@ textarea {
   .project__container,
   .project__container_{
     height: 40rem;
+    width: 62rem;
+    background-size: 620px;
   }
 
-  .project__container{
-    background-size: 620px;
+  .project__description{
+  max-width: 75rem;
+  }
+  
+  .single__project__description{
+ max-width: 55rem;
   }
 }
 
@@ -201,9 +211,6 @@ textarea {
     margin-bottom: 0rem;
     width: 50rem;
     height: 30rem;
-  }
-
-  .project__container{
     background-size: 460px;
   }
 
@@ -231,7 +238,7 @@ textarea {
   .project__container_{
     background-size: 600px;
     height: 38rem;
-    width: 70rem;
+    width: 65rem;
   }
 }
 

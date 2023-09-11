@@ -30,11 +30,10 @@ const Project = () => {
             <div className="lock__img"></div>
           </div>  
           <div className="project__mini-container">
-            <div className="single__project__title"> Mental Math </div>
+            <div className="single__project__title"> Mental Math App</div>
             <p className="single__project__description">
-              Dopefolio is a successful Open-Source project that I created 
-              which have been featured on some of the biggest tech sites like 
-              CSS-Tricks, Hostinger, etc & used by thousands of developers globally
+              The mental math app is a currently a work in progess project. It's a simple 
+              mental math trainer that's been made to feel like a game with streaks, high scores, and lives.
             </p>
             <button className="case__study__btn"> 
               <a href="https://github.com/solohuck/javaquiz-2">source code</a> 
