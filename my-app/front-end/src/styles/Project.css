@@ -78,19 +78,20 @@ textarea {
 .project__container{
   border: 5px solid black;
   background-color: #666;
-  height: 25rem;
+  height: 20rem;
   width: 90%;
   margin-bottom: 4rem;
   border-radius: 1rem;
   background-image: url(../img/use\ this\ .png);
   background-position: center;
-  background-size: 600px;
+  background-repeat: no-repeat;
+  background-size: 310px;
 }
 
 .project__container_{
   border: 5px solid black;
   background-color: #666;
-  height: 25rem;
+  height: 20rem;
   width: 90%;
   margin-bottom: 4rem;
   border-radius: 1rem;
@@ -149,6 +150,10 @@ textarea {
   .project__container_{
     height: 40rem;
   }
+
+  .project__container{
+    background-size: 620px;
+  }
 }
 
 /* 1024px */
@@ -195,6 +200,11 @@ textarea {
   .project__container_{
     margin-bottom: 0rem;
     width: 60%;
+    height: 30rem;
+  }
+
+  .project__container{
+    background-size: 460px;
   }
 
   .sinlge__project-container{
@@ -215,6 +225,12 @@ textarea {
 
   .project__description{
     max-width: 80rem;
+  }
+
+  .project__container,
+  .project__container_{
+    background-size: 600px;
+    height: 38rem;
   }
 }
 

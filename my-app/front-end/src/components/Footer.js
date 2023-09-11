@@ -8,6 +8,12 @@ const Footer = () => {
     <section className="footer" id="footer">
         <div className="footer__content">
             <div className="footer__container">
+                <div className="myname__container">
+                    <div className="myname">Solomon Huckstep</div>
+                    <p className="my__description">
+                    A motivated IT computer operator with a passion for programming, my objective is to secure a position as front-end web Developer
+                    </p>
+                </div>
                 <div className="social__container">
                     <div className="social__title">Social</div>
                     <ul className="social__icon">
@@ -18,13 +24,6 @@ const Footer = () => {
                             <img className="main-footer__icon" src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png" alt="RammCodes Github Profile"></img>
                         </a>    
                     </ul>
-                </div>
-                <div className="myname__container">
-                    <div className="myname">Solomon Huckstep</div>
-                    <p className="my__description">
-                        A Frontend focused Web Developer building the Frontend of Websites 
-                        and Web Applications that leads to the success of the overall product
-                    </p>
                 </div>
             </div>
             
