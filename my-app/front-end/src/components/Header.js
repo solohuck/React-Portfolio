@@ -87,7 +87,7 @@ const Home = () => {
       
       <section className='home__hero'>
         <div className='home__content'>
-          <h1 className='heading__primary'> Hey, I'm Solomon <br/> Huckstep</h1>
+          <h1 className='heading__primary'> Hey, I'm Solomon Huckstep</h1>
           <div className='home__info'>
             <p className='text__primary'>
             Aspiring Full Stack Web Developer | Eager to Grow, Learn, and Innovate 

@@ -139,41 +139,56 @@ textarea {
 
 /* 1024px */
 @media screen and (min-width: 1024px) {
+
+  .project__title{
+    font-size: 4rem;
+  }
+
   .project__description{
     max-width: 75%;
+    font-size: 2rem;
+    padding-bottom: 10rem;
   }
 
   .case__study__btn{
     margin-bottom: 0rem;
     margin-top: 0rem;
+    font-size: 2rem;
   }
 
   
   .project__mini-container{
     width: 50%;
-    display: grid;
-    place-items: start;
-    height: 70%;
+    align-items: flex-start;
     margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
   }
 
   .single__project__description{
     text-align: left;
     padding-bottom: 0rem;
+    font-size: 1.8rem;
   }
 
   .single__project__title{
     margin-bottom: 0rem;
+    font-size: 2.8rem;
   }
 
   .project__container{
     margin-bottom: 0rem;
-    width: 50%;
+    width: 60%;
   }
 
   .sinlge__project-container{
+    width: 90vw;
+    margin-bottom: 15rem;
+    display: flex;
     flex-direction: row;
-  }
+    gap: 2rem;
+  } 
 }
 
 
