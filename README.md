@@ -64,7 +64,7 @@ You can visit the live site for my portfolio at https://solomonhuckstep.dev/
 
 Feel free to explore the various sections of the portfolio. Here's a quick overview of the main sections:
 
-Home: Introduction and Navagation.
+Home: Introduction and Navagation. <br/>
 Contact: Use the contact form to send me a message directly
 About: learn a little about me and what skills I possess.
 Projects: Showcase of my projects with descriptions and links.
