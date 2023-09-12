@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This is a single-page React app showca
 
 - [Introduction](#introduction)
 - [Features](#features)
-- [Demo](#demo)
+- [Link](#Link)
 - [Technologies](#technologies)
 - [Setup](#setup)
 - [Usage](#usage)
@@ -23,9 +23,9 @@ This portfolio website serves as a showcase of my software development projects,
 - A contact form to reach out to me directly.
 - Smooth and responsive user interface for seamless browsing.
 
-## Demo
+## Link
 
-You can visit the live demo of my portfolio at https://solomonhuckstep.dev/
+You can visit the live site for my portfolio at https://solomonhuckstep.dev/
 
 ## Technologies
 
@@ -64,10 +64,10 @@ You can visit the live demo of my portfolio at https://solomonhuckstep.dev/
 
 Feel free to explore the various sections of the portfolio. Here's a quick overview of the main sections:
 
-Home: Introduction and Navagation.
-Contact: Use the contact form to send me a message directly
-About: learn a little about me and what skills I possess.
-Projects: Showcase of my projects with descriptions and links.
+Home: Introduction and Navagation. <br/>
+About: learn a little about me and what skills I possess. <br/>
+Projects: Showcase of my projects with descriptions and links. <br/>
+Contact: Use the contact form to send me a message directly. 
 
 ## Contact
 
