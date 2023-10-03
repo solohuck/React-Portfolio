@@ -90,7 +90,7 @@ const Home = () => {
           <h1 className='heading__primary'> Hey, I'm Solomon Huckstep</h1>
           <div className='home__info'>
             <p className='text__primary'>
-            Aspiring Full Stack Web Developer | Eager to Grow, Learn, and Innovate 
+            Aspiring Frontend Web Developer | Eager to Grow, Learn, and Innovate 
             </p>
           </div>
           <a className='home__btn btn' href='./#projects'>Projects</a>

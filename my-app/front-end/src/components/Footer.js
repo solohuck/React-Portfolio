@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="myname__container">
                     <div className="myname">Solomon Huckstep</div>
                     <p className="my__description">
-                    A motivated IT computer operator with a passion for programming, my objective is to secure a position as front-end web Developer
+                      A motivated tech enthusiast with a passion for programming, my objective is to secure a position as front-end web Developer
                     </p>
                 </div>
                 <div className="social__container">
