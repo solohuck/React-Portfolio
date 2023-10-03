@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import '../styles/Header.css';
 import '../styles/All.css';
 
 const Home = () => {
