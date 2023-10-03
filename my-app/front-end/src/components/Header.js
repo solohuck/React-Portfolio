@@ -62,14 +62,19 @@ const Home = () => {
     <section>
       <header className='header'>
         <div className='header__content'>
-          <ul className='nav__container'>
-            <li className='name'>Solomon Huckstep</li>
-            <li><a href='./' className='header__link' id='nav__link'> Home </a></li>
-            <li><a className='header__link' href='./#about'>About</a></li>
-            <li><a href='./#projects' className='header__link'> Projects </a></li>
-            <li><a href='./#contact' className='header__link'> Contact </a></li>
-          </ul>
-          <div className='nav__icons'>
+          <div className='logo__container'>
+            <div className='logo__img'>
+
+            </div>
+            <span className='name'>Solomon Huckstep</span>
+          </div>
+          <div className='header__main'>
+            <ul className='header__links header__link-hide' id='nav__menu'>
+              <a href='./' className='header__link' id='nav__link'> Home </a>
+              <a className='header__link' href='./#about'>About</a>
+              <a href='./#projects' className='header__link'> Projects </a>
+              <a href='./#contact' className='header__link'> Contact </a>
+            </ul>
             <div className='hamburger__menu-content'>
               <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg" 
               alt="hamburger menu" id='nav__toggle'></img>

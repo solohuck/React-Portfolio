@@ -15,18 +15,14 @@ const About = () =>{
                     <div className='text__primary-about'>
                         <div className='text__title'> Get to know me! </div>
                         <p className='text__space'> 
-                          I've had a passion for problem-solving and creating new things since my days in grade school. 
-                          My introduction to the tech world began during my freshman year of high school when I started using FL Studio to create beats in my bedroom. 
-                          Throughout high school, I utilized YouTube to enhance my music production skills and eventually successfully auditioned to join IUPUI's music technology program. 
-                          However, despite being accepted into the program, after two years, I began to lose faith in my ability to pursue a career in music. 
-                          At that point, music was all I knew, so I made the decision to leave IUPUI and take a break from school. 
-                          During this break, I became increasingly interested in PC gaming and even started building my own PCs. I was fascinated by the hardware and how all the components worked together. I had found a new passion, but I still needed to figure out how to turn it into a career.
-                          This led me to explore coding and web development. I was amazed by the creative possibilities that could be unlocked with just a few lines of code. I started teaching myself HTML, CSS, and JavaScript and eventually made the decision to enroll in a coding bootcamp.
-                        </p> 
+                          I've had a passion for problem-solving and creativity since childhood. 
+                          I ventured into tech during high school by teaching myslef how to use FL Studio. 
+                          Despite getting into IUPUI's music technology program, I eventually decided to leave, seeking a new direction. 
+                        </p>
                         <p className='text__space'> 
-                          I attended the Butler Full Stack Bootcamp from August 2022 to February 2023. The bootcamp challenged me with an intense amount of information to absorb in a short time. 
-                          After completing the bootcamp, I was able to dedicate more time to the areas that fascinated me the most. 
-                          I gradually leaned towards front-end development and UI/UX design, consistently learning and improving my skills in these domains. 
+                          During a break, I delved into PC gaming and hardware, sparking a new interest. I wanted to learn how video games were made and that's what lead me to coding.
+                          I tried some free courses covering full stack web development and I was hooked. I attended a Full Stack coding bootcamp from August 2022 to February 2023. 
+                          During the bootcamp I started to lean towards front-end development and UI/UX design. 
                           I'm currently working on several projects to add to my portfolio and am eager to take on freelance opportunities.
                         </p> 
                         <p className='text__space'> 
