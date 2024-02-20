@@ -126,14 +126,18 @@ textarea {
   margin-top: 2.5rem;
   font-weight: 700;
   border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
-  transition: transform .3s;
+  transition: .5s;
   padding: 1.2rem 4rem;
   font-size: 1.6rem;
   background-color: bisque;
   border: 2px solid black;
   color: black;
 }
+
+.case__study__btn:hover{
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
 
 .sinlge__project-container{
   width: 90vw;

@@ -1,4 +1,4 @@
-.contact{
+.contact {
   position: relative;
   top: 60rem;
   background-color: #f7f7f7;
@@ -6,15 +6,14 @@
   justify-content: center;
 }
 
-
-.contact__content{
+.contact__content {
   width: 90vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.contact__title{
+.contact__title {
   display: grid;
   place-items: center;
   text-align: center;
@@ -23,24 +22,24 @@
   font-weight: 600;
   padding-bottom: 2rem;
   text-transform: uppercase;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   padding-top: 10rem;
 }
 
-.contact__description{
+.contact__description {
   font-size: 1.6rem;
-    display: grid;
-    place-items: center;
-    text-align: center;
-    padding-bottom: 9rem;
-    color: #666;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding-bottom: 9rem;
+  color: #666;
 }
 
-.form__container{
+.form__container {
   width: 90vw;
   border-radius: 5px;
   background-color: #fff;
-  box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   padding: 3rem;
   margin-bottom: 10rem;
 }
@@ -64,15 +63,14 @@ textarea {
   resize: none;
 }
 
-.submit__btn{
+.submit__btn {
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
   border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(0,0,0,.15);
-  transition: transform .3s;
-  padding: 1.2rem 4rem;
+  transition: 0.5s;
+  padding: 1rem 4rem;
   font-size: 1.6rem;
   background-color: bisque;
   border: 2px solid black;
@@ -80,7 +78,11 @@ textarea {
   color: black;
 }
 
-.contact__label h2{
+.submit__btn:hover {
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.contact__label h2 {
   font-weight: 700;
   margin-bottom: 1rem;
   display: block;
@@ -89,49 +91,46 @@ textarea {
 
 /* 600px */
 @media screen and (min-width: 600px) {
-  .submit__btn{
+  .submit__btn {
     width: 30%;
   }
 
-  .contact{
+  .contact {
     top: 0;
   }
 
-  .contact__description{
+  .contact__description {
     max-width: 90%;
   }
 }
 
-
 /* 1024px */
 @media screen and (min-width: 1024px) {
-  .contact__description{
+  .contact__description {
     max-width: 70%;
     font-size: 2rem;
   }
 
-  .form__container{
+  .form__container {
     max-width: 85rem;
   }
 
-  .submit__btn{
+  .submit__btn {
     font-size: 2rem;
   }
 
-  .contact__title{  
+  .contact__title {
     font-size: 4rem;
   }
-
 }
-
 
 /* 1440p laptop */
 @media screen and (min-width: 1440px) {
-  .form__container{
+  .form__container {
     max-width: 85rem;
   }
-  
-  .contact__description{
+
+  .contact__description {
     max-width: 80rem;
   }
 }
